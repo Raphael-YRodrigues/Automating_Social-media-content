@@ -1,3 +1,4 @@
+credentials.csv
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -125,7 +126,7 @@ celerybeat.pid
 .env
 .venv
 env/
-venv/
+post_ve3nv/
 ENV/
 env.bak/
 venv.bak/
