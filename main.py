@@ -70,18 +70,19 @@ def get_credentials_from_csv(file_path):
         csv_reader = csv.DictReader(file)
         credentials = next(csv_reader)
         return credentials['email'], credentials['password']
+
 csv_file_path = 'credentials.csv'
 # Get the email and password from the CSV file
 email, password = get_credentials_from_csv(csv_file_path)
-
-# Inicia o driver
-driver = initiate_driver()
 
 # Define o prompt
 prompt = "Write a single inpirational quote about 'automation'. Be playful, informal and fun and do not add any other line of text besides the quote. Escreva em portugues-br"
 
 # Executa o script para copiar o texto do chat gpt
 prompting_chatgpt()
+
+# Inicia o driver
+driver = initiate_driver()
 
 # Navega para uma URL
 driver.get("https://www.linkedin.com/login/pt")
